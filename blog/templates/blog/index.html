@@ -4,16 +4,11 @@
 
 {% endblock %}
 {% block css_files %}
+<link rel="stylesheet" href='{% static "blog/post.css" %}'>
 <link rel="stylesheet" href='{% static "blog/index.css" %}'>
 {% endblock %}
 
 {% block content %}
- <header id="main-navigation">
-   <h1><a href="">My blogs</a></h1>
-   <nav>
-     <a href="">all posts</a>
-   </nav>
- </header>
  <section id="welcome">
    <header>
      <img src="{% static 'blog/images/avatar.jpg' %}" alt="Author Of this Blog">
@@ -24,17 +19,7 @@
 <section id="latest-posts">
    <h2>My Latest Thoughts</h2>
   <ul>
-    <li>
-      <article class="post">
-        <a href="http://">
-          <img class="mountain" src="{% static 'blog/images/1.jpg' %}" alt="Mountain Hiking" style="width:30%;">
-           <div class="post__content">
-              <h3>Mountain hiking</h3>
-             <p>some text some text some text some text some text</p>
-           </div>
-        </a>
-      </article>
-    </li>
+    {% include "blog/includes/post.html" %}
   </ul>
 </section>
 

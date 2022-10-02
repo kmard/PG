@@ -9,8 +9,14 @@
    {% block css_files %}{% endblock %}
 </head>
 <body>
-  {% block content %}
+     <header id="main-navigation">
+       <h1><a href="">My blogs</a></h1>
+       <nav>
+         <a href="">all posts</a>
+       </nav>
+     </header>
+      {% block content %}
 
-  {% endblock %}
+      {% endblock %}
 </body>
 </html>

@@ -2,12 +2,12 @@
  {% load static %}
 
 {% block title %}
-  This post title
-{% endblock %}
+  {{post.slug}}
+{% endblock title %}
 
 {% block css_files %}
 <link rel="stylesheet" href='{% static "blog/post-detail.css" %}'>
-{% endblock %}
+{% endblock css_files %}
 
 {% block content %}
  <section id="summary">
@@ -29,4 +29,4 @@
          {{post.content|linebreaks}}
      </p>
  </main>
-{% endblock %}
+{% endblock content %}

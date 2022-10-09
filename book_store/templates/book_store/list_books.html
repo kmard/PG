@@ -10,7 +10,8 @@
 <ul>
     {% for book in books %}
      <li>
-         <a href="{% url 'book' book.id %}">
+<!--         <a href="{% url 'book' book.id %}">-->
+         <a href="{{ book.get_absolute_url}}">
          {{book.title}}/{{book.author}} (Rating: {{book.rating}})
          </a>
      </li>

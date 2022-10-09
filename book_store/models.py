@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import  MinValueValidator,MaxValueValidator
+from django.urls import reverse
 
 # Create your models here.
 
@@ -10,7 +11,7 @@ class Book(models.Model):
     is_bestselling = models.BooleanField(default=False)
 
     def get_absolute_url(self):
-        return ''
+        return reverse('book',args=[self.id])
 
 
     def __str__(self):

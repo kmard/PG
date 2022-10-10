@@ -14,3 +14,10 @@ def book_detail(request,id):
         return render(request, 'book_store/book_detail.html', {'book': book})
     except:
         raise Http404()
+
+def book_detail_slug(request,slug):
+    try:
+        book = Book.objects.get(slug=slug)
+        return render(request, 'book_store/book_detail.html', {'book': book})
+    except:
+        raise Http404()

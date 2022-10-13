@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from book_store.models import Book
+from book_store.models import Book,Author
 
 # Register your models here.
 
@@ -15,3 +15,4 @@ class BookAdmin(admin.ModelAdmin):
     pass
 
 admin.site.register(Book,BookAdmin)
+admin.site.register(Author)

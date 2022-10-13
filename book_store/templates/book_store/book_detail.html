@@ -13,6 +13,9 @@
  {% else %}
     and isn't a bestseller.
  {% endif %}
-
  </p>
+<a href="{% url 'list' %}" class="Back">Back to list</a>
+<br>
+<a href="{% url 'starting_page' %}">My blogs</a>
 {% endblock content %}
+

@@ -9,7 +9,7 @@ class BookAdmin(admin.ModelAdmin):
     #
     # prepopulated_fields = {'slug':('title',)}
     #
-    list_display = ('title','author','rating')
+    list_display = ('title','author','rating','is_bestselling')
 
     list_filter = ('title','author')
     pass

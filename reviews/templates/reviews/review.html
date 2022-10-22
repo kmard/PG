@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href='{% static "reviews/reviews.css" %}'>
+    <title>Your Review</title>
+</head>
+<body>
+  <h1>Review</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {% if has_error %}
+           <h2 class="error">Your name is empty</h2>
+        {% endif %}
+        {{ form }}
+<!--        <label for="username">Your Name</label>-->
+<!--        <input id="username" name="username" type="text">-->
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

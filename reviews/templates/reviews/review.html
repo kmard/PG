@@ -13,9 +13,12 @@
         {% if has_error %}
            <h2 class="error">Your name is empty</h2>
         {% endif %}
-        {{ form }}
+<!--        {{ form }}-->
 <!--        <label for="username">Your Name</label>-->
 <!--        <input id="username" name="username" type="text">-->
+        {{form.user_name.label_tag}}
+        {{form.user_name}}
+        {{form.user_name.errors}}
         <button type="submit">Send</button>
     </form>
 </body>

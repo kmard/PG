@@ -18,10 +18,9 @@ def review(request):
         if form.is_valid():
            # form.cleaned_data
            return HttpResponseRedirect('thank-you')
-
-
-    form = ReviewForm()
-    return render(request,'reviews/review.html',{'form':form,'has_error':False})
+    else:
+        form = ReviewForm()
+        return render(request,'reviews/review.html',{'form':form,'has_error':False})
 
 
 def thank_you(request):

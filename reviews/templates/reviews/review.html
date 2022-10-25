@@ -16,9 +16,21 @@
 <!--        {{ form }}-->
 <!--        <label for="username">Your Name</label>-->
 <!--        <input id="username" name="username" type="text">-->
-        {{form.user_name.label_tag}}
-        {{form.user_name}}
-        {{form.user_name.errors}}
+       <div class="form-control">
+            {{form.user_name.label_tag}}
+            {{form.user_name}}
+            {{form.user_name.errors}}
+            {{form.raiting.label_tag}}
+            {{form.raiting}}
+       </div>
+        <br>
+       <div class="form-control">
+        {{form.review_text.label_tag}}
+        <br>
+        {{form.review_text}}
+       </div>
+
+        <br>
         <button type="submit">Send</button>
     </form>
 </body>

@@ -2,17 +2,17 @@
 //ctr+f5
 body{
     font-family:sans-serif;
-    margin:0;
 }
 
 
 form{
-   matgin: 3rem auto;
    width:90%;
    max-width: 40rem;
    padding: 1rem;
    corder-radius: 12px;
    background-color: #8BC34A;
+   font-weight: bold;
+   margin:0,auto;
 }
 
 button{

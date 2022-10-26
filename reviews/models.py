@@ -1,8 +1,8 @@
 from django.db import models
 
 class Review(models.Model):
-    user_name = models.CharField()
-    review_text = models.CharField()
+    user_name = models.CharField(max_length=100)
+    review_text = models.CharField(max_length=200)
     raiting = models.IntegerField()
 
 

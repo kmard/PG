@@ -1,0 +1,17 @@
+
+form{
+    background: #1a90d2;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #42c0e0;
+}
+
+.btn{
+    background: #3fa171;
+    width: 10%;
+    padding: 10px 9px;
+    border-radius: 10px;
+}

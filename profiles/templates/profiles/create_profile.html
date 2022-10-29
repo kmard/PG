@@ -11,8 +11,9 @@
 <body>
    <form action="/profiles/" method="post" enctype="multipart/form-data">
      {% csrf_token %}
-     <input type="file" name="image">
-     <button>Upload!</button>
+<!--     <input type="file" name="image">-->
+       {{form}}
+     <button class="btn Up">Upload!</button>
    </form>
 </body>
 </html>

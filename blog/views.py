@@ -1,6 +1,7 @@
 
 from .models import Post
 from django.views.generic import ListView, DetailView
+from .forms import CommentForm
 
 class StartingPageView(ListView):
     template_name = 'blog/index.html'
@@ -38,6 +39,7 @@ class SinglePostView(DetailView):
     def get_context_data(self, **kwargs):
         context =  super().get_context_data(** kwargs)
         context['post_tags'] = self.object.tags.all()
+        context['comment_form'] = CommentForm()
         return context
 
 

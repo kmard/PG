@@ -106,3 +106,7 @@ main {
  background-color: #9d6ade;
  border-color: #9d6ade;
 }
+
+.invalid label{
+ color: #d6000b;
+}
